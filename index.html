@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" type="text/css">
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/c79d8e2c6c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>portfolio</title>
+</head>
+<body onload="load()">
+
+  
+
+    <header>
+      <div class="nav-bar">
+        <a href="#home" class="logo"><img style="width: 100px;" src="img/logo1.png"/></a>
+        <div class="navigation">
+          <div class="nav-items">
+            <i class="uil uil-times nav-close-btn"></i>
+            <a href=""><i class="uil uil-home"></i> Home</a>
+            <a href="#count"><i class="uil uil-info-circle"></i> About</a>
+            <a href="#skill"><i class="uil uil-compass"></i> Skills</a>
+            <a href="#service"><i class="uil uil-compass"></i> My Services</a>
+            <a href="#testimonial"><i class="uil uil-compass"></i> Projects</a>
+            <a href="../portfolio/blogs/index.html"><i class="uil uil-document-layout-left"></i> Blog</a>
+            <a href="#contact"><i class="uil uil-envelope"></i> Contact</a>
+          </div>
+        </div>
+        <i class="uil uil-apps nav-menu-btn"></i>
+      </div>
+      <div class="scroll-indicator-container">
+        <div class="scroll-indicator-bar"></div>
+      </div>
+    </header>
+  
+   
+  
+    <script>
+      //Javacript for the scroll indicator bar
+      window.addEventListener("scroll", () => {
+        const indicatorBar = document.querySelector(".scroll-indicator-bar");
+  
+        const pageScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrollValue = (pageScroll / height) * 100;
+  
+        indicatorBar.style.width = scrollValue + "%";
+      });
+  
+      //Responsive navigation menu toggle
+      const menuBtn = document.querySelector(".nav-menu-btn");
+      const closeBtn = document.querySelector(".nav-close-btn");
+      const navigation = document.querySelector(".navigation");
+  
+      menuBtn.addEventListener("click", () => {
+        navigation.classList.add("active");
+      });
+  
+      closeBtn.addEventListener("click", () => {
+        navigation.classList.remove("active");
+      });
+    </script>
+  
+    
+  
+    
+  
+   
+  
+
+    <div class="main-head">
+    <div class="header-2">
+        <img src="img/Untitled-3.png">
+        </div>
+    </div>  
+    <section class="section-2" id="home">
+        <div class="container">
+            <div class="sectionmain">
+                <div class="box-1">
+                    <img style="width: 40px;" src="img/skil.png">
+                    <p>Skilled</p>
+                </div>
+
+                <div class="box-2">
+                    <img src="img/icon-3.png">
+                    <p>Hi there!</p>
+                </div>
+
+           
+
+            <div class="middle-img">
+                <img src="img/banner-circle.png">
+            </div>
+
+           
+                <div class="box-3">
+                    <img src="img/icon-2.png">
+                    <p>Creative</p>
+
+                </div>
+                <div class="box-4">
+                    <img style="width: 40px;" src="img/exp.png">
+                    <p>Experienced</p>
+
+                </div>
+        </div>
+
+        <div class="text-area">
+            <h5>HI THERE, I'M Zubair Ayub</h5>
+            <h2>A <span style="color: #6b6ef7;">Experience</span> Software <br> Engineer</h2>
+        </div>
+
+    </div>
+
+    </section>
+
+    <section class="counter-section" id="count">
+        <div class="container">
+            <div class="countmain">
+               <div class="one">
+                  <div class="one-icon">
+                     <i class="fa-solid fa-briefcase"></i>
+                  </div>
+                  <div class="one-text">
+                     <p id="0101" style="color:white; font-size:30px;">0</p>
+                     <p style="color:#b1b493;">Total Projects</p>
+                  </div>
+      
+               </div>
+               <div class="two">
+                  <div class="two-icon">
+                     <i class="fa-solid fa-person"></i>
+                  </div>
+                  <div class="two-text">
+                     <p id='0102' style="color:white; font-size:30px;">0</p>
+                     <p style="color:#b1b493;">Years of Experience</p>
+                  </div>
+      
+               </div>
+               <div class="three">
+                  <div class="three-icon">
+                     <i class="fa-solid fa-mug-hot"></i>
+                  </div>
+                  <div class="three-text">
+                     <p style="color:white; font-size:30px;"><span id='0103'></span></p>
+                     <p style="color:#b1b493;">Satisfied Clients</p>
+                  </div>
+      
+               </div>
+               <div class="four">
+                  <div class="four-icon">
+                     <i class="fa-solid fa-calendar-week"></i>
+                  </div>
+                  <div class="four-text">
+                     <p id="0104" style="color:white; font-size:30px;"><span id='0104'></span>0</p>
+                     <p style="color:#b1b493; font-size:16px;">Fiverr Rating</p>
+                  </div>
+      
+               </div>
+            </div>
+         </div>
+
+    </section>
+         <section class="about-section">
+            <div class="container">
+               <div class="about-us">
+                  <div class="about-1">
+                     <h1><span style="-webkit-text-stroke: 2px darkblue;">A</span><span style="-webkit-text-stroke: 2px darkblue;">B</span><span style="-webkit-text-stroke: 2px darkblue;">O</span><span style="-webkit-text-stroke: 2px darkblue;">U</span><span style="-webkit-text-stroke: 2px darkblue;">T</span><span style="-webkit-text-stroke: 2px darkblue; padding-top: 31px;">M</span><span style="-webkit-text-stroke: 2px darkblue;">E</span></h1>
+                     <!-- <img src="./img/about-1.jpg"> -->
+                  </div>
+                  <div class="about-text">
+                     <h1>Welcome to my portfolio! </h1>
+                    
+                     <h5>I'm excited for you to explore my background, achievements, and skills. Here, you'll find a comprehensive overview of who I am as a professional. I hope my portfolio gives you a clear understanding of my abilities and inspires you to connect. Feel free to take a look around and reach out with any questions.</h5>
+                     <div class="table">
+                        <div class="ttwo">
+                           <h6>Name:
+                           </h6>
+                           <h4>Zubair Ayub
+                           </h4>
+                        </div>
+                        <div class="ttwo">
+                           <h6>Date Of Birth:
+                           </h6>
+                           <h4>December 10, 1996
+      
+                           </h4>
+                        </div>
+                        <div class="ttwo">
+                           <h6>Address:
+                           </h6>
+                           <h4>Karachi, Pakistan
+      
+                           </h4>
+                        </div>
+                        
+                       
+
+                        <div class="ttwo">
+                           <h6>Eduaction:
+                           </h6>
+                           <h4>Software Engineer | Diploma
+                           </h4>
+                        </div>
+                        <div class="ttwo">
+                           <h6>Experience
+                           </h6>
+                           <h4>7 Years
+                           </h4>
+                        </div>
+                     </div>
+                    
+                  </div>
+               </div>
+            </div>
+            </div>
+         </section>
+
+         <section class="section-3" id="skill">
+            <h1>Skills</h1>
+            <div class="mainanimation">
+    
+            <div class="container">
+                <div class="card" data-aos="fade-down-right">
+                    <div class="percent" style="--clr:#04fc43; --num:85;">
+                        <div class="dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>85<span>%</span></h2>
+                            <p>Technical Skills</p>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="card" data-aos="fade-down-left">
+                    <div class="percent" style="--clr:blue; --num:95;">
+                        <div class="dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>95<span>%</span></h2>
+                            <p>Leadership Skills</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card"  data-aos="fade-down-right">
+                    <div class="percent" style="--clr:darkgoldenrod; --num:95;">
+                        <div class="dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>95<span>%</span></h2>
+                            <p>Problem-Solving</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card" data-aos="fade-down-left">
+                    <div class="percent" style="--clr:rgb(177, 141, 141); --num:80;">
+                        <div class="dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>80<span>%</span></h2>
+                            <p>Communication<br/> Skills</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+    
+        </section>
+
+        <section class="sec-service" id="service">
+         <div class="container">
+            <h1>My Services</h1>
+             <div class="watermain" >
+                 <div class="drop" style="--clr:#ff0f5b;" data-aos="zoom-in">
+                 <div class="content">
+                 <h2>01</h2>
+                 <p>Custom software development</p>
+                 <p>Bring your ideas to life with our custom software solutions</p>
+                 <a href="#">Contact me now to schedule a consultation</a>
+             </div>
+                 </div>
+                 
+                 <div class="drop"  style="--clr:blue;" data-aos="zoom-in">
+                 <div class="content">
+                 <h2>02</h2>
+                 <p>Website/App design and developments</p>
+                 <p>Accelerate Your Business Growth with Our Website and App Development Services</p>
+                 <a href="#">Get in touch to schedule a consultation</a>
+             </div>
+                 </div>
+                 <div class="drop"  style="--clr:rgb(61, 61, 32);" data-aos="zoom-in">
+                 <div class="content">
+                 <h2>03</h2>
+                 <p>Project management and consultancy</p>
+                 <p>Streamline your project process with our expert project management services</p>
+                 <a href="#">Get in touch today for a free quote</a>
+             </div>
+                 </div>
+ 
+                 <div class="drop"  style="--clr:gray;" data-aos="zoom-in">
+                     <div class="content">
+                     <h2>04</h2>
+                     <p>CEO Support</p>
+                     <p>Elevate your business with our CEO support services</p>
+                     <a href="#">Get in touch today to schedule a call</a>
+                 </div>
+                     </div>
+                 
+ 
+             </div>
+ 
+         </div>
+     </section>
+
+
+
+         <section class="review-section" id="testimonial">
+            <div class="container">
+               <div class="testimonial-section">
+                  <h6 style="color:white; font-weight: 600;">Projects
+                  </h6>
+                  <h2 style="color: white; font-size: 40px;">Worked on?
+                  </h2>
+                  <h4 style="color: white; font-size: 16px;">Making an Impact: A Collection of Groundbreaking Projects
+                  </h4>
+                  <!--  -->
+                  <div class="google">
+                     <div class="row1">
+                        <div class="start1">
+                           <div class="testimonial1">
+                              <img style="width: 100px;" src="img/logo.webp" class="women">
+                           </div>
+                           <div class="testimonial2">
+                              <h4>Michelelondon</h4>
+                              <h6>Ai | ChatGPT Clone</h6>
+                             <h4> <a href="http://www.artificialintelligencekit.com/">view</a></h4>
+                              
+                           </div>
+                        </div>
+                        <div class="line2"></div>
+                        <div class="start2">
+                           Developed a ChatGPT clone for testing purposes with a simple UI and utilizing OpenAI API, delivering efficient results for the client
+                        </div>
+                     </div>
+                     <div class="row2">
+                        <div class="start3">
+                           <div class="testimonial3">
+                              <img style="width: 100px;" src="./img/soundswift.png" class="women">
+                           </div>
+                           <div class="testimonial4">
+                              <h4>Marv</h4>
+                              <h6>SoundSwift: A Social Media Powerhouse</h6>
+                              <h4> <a href="http://www.soundswift.com/">view</a></h4>
+                            
+                           </div>
+                        </div>
+                        <div class="line2"></div>
+                        <div class="start4">
+                           I developed a social media platform with features similar to Facebook, Instagram, and YouTube. The platform had a rich UI and included payment and ecommerce functionalities.
+                        </div>
+                        
+                     </div>
+                     <div class="row2">
+                        <div class="start3">
+                           <div class="testimonial3">
+                              <img style="width: 100px;" src="./img/logotrade.png" class="women">
+                           </div>
+                           <div class="testimonial4">
+                              <h4>Fadi</h4>
+                              <h6>Empowering Tradesmen, Services Booking</h6>
+                              <h4> <a href="http://tradesglobeinc.com/">view</a></h4>
+                            
+                           </div>
+                        </div>
+                        <div class="line2"></div>
+                        <div class="start4">
+                           Developed a comprehensive e-commerce platform for Trade Globe, providing booking and scheduling services for plumbers and electricians. Implemented payment methods and optimized for user-friendly experience
+                        </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         
+         <script>
+            function animate(obj, initVal, lastVal, duration) {
+               let startTime = null;
+      
+               //get the current timestamp and assign it to the currentTime variable
+               let currentTime = Date.now();
+      
+               //pass the current timestamp to the step function
+               const step = (currentTime) => {
+      
+                  //if the start time is null, assign the current time to startTime
+                  if (!startTime) {
+                     startTime = currentTime;
+                  }
+      
+                  //calculate the value to be used in calculating the number to be displayed
+                  const progress = Math.min((currentTime - startTime) / duration, 1);
+      
+                  //calculate what to be displayed using the value gotten above
+                  obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
+      
+                  //checking to make sure the counter does not exceed the last value (lastVal)
+                  if (progress < 1) {
+                     window.requestAnimationFrame(step);
+                  } else {
+                     window.cancelAnimationFrame(window.requestAnimationFrame(step));
+                  }
+               };
+               //   
+      
+               //start animating
+               window.requestAnimationFrame(step);
+            }
+            let text1 = document.getElementById('0101');
+            let text2 = document.getElementById('0102');
+            let text3 = document.getElementById('0103');
+            let text4 = document.getElementById('0104');
+            const load = () => {
+               animate(text1, 0, 750, 5000);
+               animate(text2, 0, 7, 5000);
+               animate(text3, 0, 730, 5000);
+               animate(text4, 0, 5, 5000);
+            }
+         </script>
+         <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+         <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+         <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+         <script type="text/javascript" src="slick.min.js"></script>
+         <script>
+            $('.slider').slick({
+               slidesToShow: 3,
+               slidesToScroll: 1,
+               autoplay: true,
+               autoplaySpeed: 2000,
+               responsive: [
+                  {
+                     breakpoint: 992,
+                     settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        centerPadding: '140px',
+                     },
+                  },
+                  {
+                     breakpoint: 768,
+                     settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        // centerPadding: '140px',
+                     },
+                  },
+                  {
+                     breakpoint: 576,
+                     settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 2,
+                        // centerPadding: '140px',
+                     },
+                  },
+               ],
+            })
+         </script>
+
+
+
+<section class="contact-sec" id="contact">
+   <div class="container">
+      <h1>Contact</h1>
+      <div class="con-main">
+         <div class="cnt-1">
+      <form action="action_page.php">
+    
+        
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <input type="text" id="lname" name="Email" placeholder="Email..">
+    
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <div class="button">
+        <input type="submit" value="Submit" id="buton">
+      </div>
+      </form>
+    </div>
+    <div class="cnt-2">
+      <div class="cnt-main-1">
+      <i class="fa-solid fa-phone"></i>
+      <p>+92-315-0234592</p>
+
+   </div>
+   <div class="cnt-main-1">
+      <i class="fa-solid fa-envelope"></i>
+      <p>zubairayub@hotmail.com</p>
+
+   </div>
+
+   <div class="cnt-main-1">
+      <i class="fa-brands fa-github"></i>
+      <p>zubairayub</p>
+
+   </div>
+
+  
+  
+    </div>
+   </div>
+   </div>
+
+</section>
+
+         <!-- <section class="sec-footer">
+            <div class="footer">
+               <div class="footer-main">
+                  <h5>Developed By<span style="color: #6b6ef7;"> ShariqShahid</span></h5>
+                  <br>
+                  <h5>Inspire By<span style="color: #6b6ef7;"> Husnain Baber</span> </h5>
+               </div>
+               
+               
+            </div>
+         </section> -->
+
+         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+         <script>
+            AOS.init();
+          </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="last-form">
+   <input type="text" placeholder="Name">
+   <input type="email" placeholder="Email">
+   <input type="tel" placeholder="Phone Number">
+   <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Message"></textarea>
+   <div class="send">
+       <button>Send</button>
+       </div> -->
+
+
+
+
+       <!-- .last-form{
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         width: 50%;
+         height: 500px;
+        line-height: 50px;
+     }
+     .last-form input{
+         width: 400px;
+         height: 50px;
+         margin: 30px 0 0 20px;
+         padding-left: 10px;
+         font-family: 'Poppins', sans-serif;
+         font-size: 16px;
+     border: none;
+     }
+     .last-form input:focus{
+         outline: none;
+     }
+     .last-form textarea:focus{
+         outline: none;
+     }
+     .last-form textarea{
+         width: 400px;
+         height: 80px;
+         padding-left: 10px;
+         margin: 30px 0 0 20px;
+         font-family: 'Poppins', sans-serif;
+         font-size: 16px;
+     border: none;
+     }
+     .send{
+         display: flex;
+         width: 70%;
+         justify-content: flex-end;
+     }
+     .send button{
+         height: 50px;
+         width: 150px;
+         font-family: 'Poppins', sans-serif;
+         background-color: #fd7e14;
+         color: white;
+         border: none;
+         cursor: pointer;
+         border-radius: 50px;
+         font-size: 18px;
+         margin: 30px 0 0  0; 
+     } -->
